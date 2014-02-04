@@ -6,6 +6,16 @@ $pages = array(
     "name" => "",
     "file" => "doc/index.html",
   ),
+  "hinnakiri" => array(
+    "name" => "hinnakiri",
+    "title" => "Hinnakiri",
+    "file" => "doc/hinnakiri.html",
+  ),
+  "toad" => array(
+    "name" => "toad",
+    "title" => "Toad",
+    "file" => "doc/toad.html",
+  ),
   "hotell" => array(
     "name" => "hotell",
     "title" => "Hotell",
@@ -48,6 +58,7 @@ $nav .= "</ul>";
 </head>
 <body>
 
+  <div id="container">
   <h1><a href="." title="avalehele">Kambja Hotell</a></h1>
 
   <?php echo $nav; ?>
@@ -67,6 +78,8 @@ $nav .= "</ul>";
   </div>
 
   <p id="footer">Kambja Hotell, Kambja, ...</p>
+  
+  </div>
   
 </body>
 </html>

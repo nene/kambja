@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #fff4f4;
+    background: #ffefdd;
     color: #000;
     font-family: Georgia, serif;
 }
@@ -9,64 +9,68 @@ img {
     border: none;
 }
 
+#container {
+    padding: 1em 5%;
+}
+
 h1 {
-    background: #c33;
     margin: 0;
-    padding: 16px 1.1em 6px;
+    padding: 0 0 6px 0;
     font-family: "Times new Roman", serif;
     font-size: 32px;
     line-height: 36px;
     font-style: italic;
-    border-bottom: 3px solid #900;
 }
 h1 a {
-    color: #fee;
+    color: #c33;
     text-decoration: none;
-    text-shadow: #900 3px 3px 2px;
+    text-shadow: #ccc 3px 3px 2px;
 }
 h1 a:hover {
-    color: #fff;
+    color: #c33;
 }
 
 
 #nav {
-    margin: 0;
-    padding: 0;
+    margin: 0 -1em;
+    padding: 0 0.75em;
+    background: #c33;
+    height: 36px;
 }
 #nav li {
     list-style: none;
-    position: absolute;
-    top: 31px;
+    float: left;
+    padding: 0;
 }
-#nav li.hotell { left: 300px; }
-#nav li.korvalhoone { left: 420px; }
 #nav li a {
     display: block;
     text-decoration: none;
-    border: 3px solid #900;
-    background: #c33;
-    padding: 0.2em 1em;
+    font-style: italic;
     font-weight: bold;
-    color: #fee;
-    font-size: 16px;
-    line-height: 18px;
-    text-shadow: #900 1px 1px 2px;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
+    color: #ffefdd;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 0.75em;
+    border-top: 3px solid #c33;
+    border-bottom: 3px solid #c33;
 }
-#nav li.selected a,
 #nav li a:hover {
-    color: #c33;
-    background: #fff4f4;
-    border-bottom-color: #fff4f4;
-    text-shadow: #ccc 1px 1px 2px;
+    color: #fff;
+    background: #d44;
+    border-top: 3px solid #d44;
+    border-bottom: 3px solid #b22;
+}
+#nav li.selected a {
+    color: #fff;
+    background: #d44;
+    border-top: 3px solid #d44;
+    border-bottom: 3px solid #900;
 }
 
 #content {
-    padding: 1em 0 5em 4%;
-    float: left;
+    clear: both;
+    padding: 1em 0 5em 0;
+    float: right;
     width: 75%;
     max-width: 706px;
     line-height: 1.5;
@@ -150,8 +154,7 @@ h1 a:hover {
 
 
 #partners {
-    float: right;
-    padding-right: 3%;
+    float: left;
     width: 17%;
 }
 #partners h3 {
@@ -165,7 +168,7 @@ h1 a:hover {
     padding: 0.5em 1em 0.2em;
     border: 3px solid #900;
     border-top: 3px solid #c33;
-    margin: 0 0 0.5em;
+    margin: 1em 0 0.5em;
     position: relative;
     top: -3px;
     -webkit-border-bottom-left-radius: 5px;
