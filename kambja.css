@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff4f4;
+    color: #000;
+    font-family: Georgia, serif;
+}
+img {
+    border: none;
+}
+
+h1 {
+    background: #c33;
+    margin: 0;
+    padding: 16px 1.1em 6px;
+    font-family: "Times new Roman", serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-style: italic;
+    border-bottom: 3px solid #900;
+}
+h1 a {
+    color: #fee;
+    text-decoration: none;
+    text-shadow: #900 3px 3px 2px;
+}
+h1 a:hover {
+    color: #fff;
+}
+
+
+#nav {
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    list-style: none;
+    position: absolute;
+    top: 31px;
+}
+#nav li.hotell { left: 300px; }
+#nav li.korvalhoone { left: 420px; }
+#nav li a {
+    display: block;
+    text-decoration: none;
+    border: 3px solid #900;
+    background: #c33;
+    padding: 0.2em 1em;
+    font-weight: bold;
+    color: #fee;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: #900 1px 1px 2px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+}
+#nav li.selected a,
+#nav li a:hover {
+    color: #c33;
+    background: #fff4f4;
+    border-bottom-color: #fff4f4;
+    text-shadow: #ccc 1px 1px 2px;
+}
+
+#content {
+    padding: 1em 0 5em 4%;
+    float: left;
+    width: 75%;
+    max-width: 706px;
+    line-height: 1.5;
+}
+
+#content h2 {
+    color: #c33;
+    font-size: 1.4em;
+    text-shadow: #ccc 2px 2px 3px;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+#content a {
+    color: #c33;
+}
+#content a:visited {
+    color: purple;
+}
+#content a:hover {
+    background: #c33;
+    color: white;
+    text-decoration: none;
+}
+#content a:visited:hover {
+    background: purple;
+    color: white;
+    text-decoration: none;
+}
+
+#content ul,
+#content ol {
+    margin-left: 1.5em;
+    padding: 0;
+    color: #c33;
+}
+#content ul li
+#content ol li {
+    color: #000;
+}
+
+#content .img {
+    clear: both;
+    float: right;
+    margin: 0 0 1em 1em;
+}
+#content .img a,
+#content .img a:visited {
+    display: block;
+    border: 3px solid #900;
+    background: #c33;
+    text-decoration: none;
+    color: #fee;
+    text-shadow: #900 1px 1px 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#content .img a:hover,
+#content .img a:visited:hover {
+    background: #c33;
+    outline: 3px solid #900;
+}
+#content .img img {
+    display: block;
+}
+#content .img span {
+    display: block;
+    padding: 0.1em 0.5em;
+}
+
+#content #map {
+    border: 3px solid #900;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#content #map iframe {
+    display: block;
+}
+
+
+#partners {
+    float: right;
+    padding-right: 3%;
+    width: 17%;
+}
+#partners h3 {
+    font-weight: bold;
+    color: #fee;
+    font-size: 16px;
+    line-height: 18px;
+    text-shadow: #900 1px 1px 2px;
+    background: #c33;
+    text-align: center;
+    padding: 0.5em 1em 0.2em;
+    border: 3px solid #900;
+    border-top: 3px solid #c33;
+    margin: 0 0 0.5em;
+    position: relative;
+    top: -3px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+}
+#partners ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#partners ul a {
+    display: block;
+    border: 3px solid #900;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 0.5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform 0.1s linear;
+}
+#partners ul a:hover {
+    -webkit-transform: rotate(5deg);
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    font-size: smaller;
+    color: #333;
+}
+
