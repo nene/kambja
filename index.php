@@ -16,15 +16,30 @@ $pages = array(
     "title" => "Toad",
     "file" => "doc/toad.html",
   ),
-  "hotell" => array(
-    "name" => "hotell",
-    "title" => "Hotell",
-    "file" => "doc/hotell.html",
+  "pubi" => array(
+    "name" => "pubi",
+    "title" => "Pubi",
+    "file" => "doc/pubi.html",
   ),
-  "korvalhoone" => array(
-    "name" => "korvalhoone",
-    "title" => "Kõrvalhoone",
-    "file" => "doc/korvalhoone.html",
+  "saun" => array(
+    "name" => "saun",
+    "title" => "Saun",
+    "file" => "doc/saun.html",
+  ),
+  "uritused" => array(
+    "name" => "uritused",
+    "title" => "Üritused",
+    "file" => "doc/uritused.html",
+  ),
+  "eripakkumised" => array(
+    "name" => "eripakkumised",
+    "title" => "Eripakkumised",
+    "file" => "doc/eripakkumised.html",
+  ),
+  "asukoht" => array(
+    "name" => "asukoht",
+    "title" => "Asukoht",
+    "file" => "doc/asukoht.html",
   ),
 );
 
@@ -55,6 +70,8 @@ $nav .= "</ul>";
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title><?php echo $title; ?>Kambja Hotell</title>
   <link rel="stylesheet" type="text/css" href="kambja.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="kambja.js"></script>
 </head>
 <body>
 
@@ -68,15 +85,16 @@ $nav .= "</ul>";
   </div>
 
   
-  <div id="partners">
-    <h3>Partnerid</h3>
-    
-    <ul>
-      <li><a href="http://www.veinimaailm.ee"><img src="img/veinimaailm.jpg" alt="Veinimaailm" /></a></li>
-      <li><a href="">Veel keegi</a></li>
-    </ul>
+  <div id="sidebar">
+   <div id="animation">
+     <div id="an-4"><div id="an-3"><div id="an-2"><div id="an-1"></div></div></div></div>
+   </div>
+   <ul>
+    <li><a href="http://www.veinimaailm.ee/">Veinimaailm</a></li>
+    <li><a href="http://www.meidaco.ee/">Jaana Ilusalong</a></li>
+   </ul>
   </div>
-
+  
   <p id="footer">Kambja Hotell, Kambja, ...</p>
   
   </div>
