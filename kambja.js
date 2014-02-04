@@ -1,15 +1,21 @@
 $(function(){
+  // milliseconds to wait between animations
+  var DELAY = 5000;
+  // animation speed in milliseconds
+  var ANIM = 1000;
   
   var fadeOutStep = function(id, callback) {
-    $(id).fadeOut(1000, function() {
-      setTimeout(callback, 2000);
+    $(id).fadeOut(ANIM, function() {
+      setTimeout(callback, DELAY);
     });
   };
   
   var fadeOut = function() {
     fadeOutStep("#an-1", function() {
       fadeOutStep("#an-2", function() {
-        fadeOutStep("#an-3", fadeIn);
+        fadeOutStep("#an-3", function() {
+          fadeOutStep("#an-4", fadeIn);
+        });
       });
     });
   };
@@ -17,12 +23,13 @@ $(function(){
   var fadeIn = function() {
     $("#animation #an-1").show();
     $("#animation #an-2").show();
-    $("#animation #an-3").fadeIn(1000, function(){
-      setTimeout(fadeOut, 2000);
+    $("#animation #an-3").show();
+    $("#animation #an-4").fadeIn(ANIM, function(){
+      setTimeout(fadeOut, DELAY);
     });
   };
   
-  fadeOut();
+  setTimeout(fadeOut, DELAY);
   
 });
 

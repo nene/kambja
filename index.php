@@ -52,14 +52,14 @@ else {
 
 $title = $page["title"] ? $page["title"]." - " : "";
 
-$nav = "<ul id='nav'>\n";
+$nav = "<ul>\n";
 foreach ($pages as $p) {
   if ($p["name"]) {
     $selected = $p["name"] == $page["name"] ? "selected" : "";
     $nav .= "<li class='$p[name] $selected'><a href='$p[name]'>$p[title]</a></li>\n";
   }
 }
-$nav .= "</ul>";
+$nav .= "</ul></div>";
 
 
 ?>
@@ -76,26 +76,40 @@ $nav .= "</ul>";
 <body>
 
   <div id="container">
-  <h1><a href="." title="avalehele">Kambja Hotell</a></h1>
+  <h1><a href="." title="avalehele"><strong>Kambja</strong> <small>Hotell</small></a></h1>
 
+  <ul id="lang">
+    <li class="selected"><a href="et">EST</a></li>
+    <li><a href="en">ENG</a></li>
+    <li><a href="ru">RUS</a></li>
+  </ul>
+
+  <div id='nav'><div>
   <?php echo $nav; ?>
+  </div></div>
 
+  <div id="body">
+  
   <div id="content">
-    <?php include $page["file"]; ?>
+  <?php include $page["file"]; ?>
   </div>
 
-  
   <div id="sidebar">
    <div id="animation">
-     <div id="an-4"><div id="an-3"><div id="an-2"><div id="an-1"></div></div></div></div>
+     <div id="an-5"><div id="an-4"><div id="an-3"><div id="an-2"><div id="an-1"></div></div></div></div></div>
    </div>
+   
+   <h2>Partnerid:</h2>
    <ul>
     <li><a href="http://www.veinimaailm.ee/">Veinimaailm</a></li>
     <li><a href="http://www.meidaco.ee/">Jaana Ilusalong</a></li>
    </ul>
   </div>
+
+  <p id="footer">Kambja Hotell: Tartumaal Kambja vallas Kambja külas.
+  Tel: +372 4534 1231. E-post: hotell@kambjahotell.ee</p>
   
-  <p id="footer">Kambja Hotell, Kambja, ...</p>
+  </div>
   
   </div>
   
